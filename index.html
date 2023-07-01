@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Bancária</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Conta Bancária</h1>
+    <div id="balance" ></div>
+    <form id="withdraw-form" onsubmit="event.preventDefault(); withdraw()">
+        <input type="number" id="txtnumero" placeholder="Valor do saque" step="0.01">
+        <button type="submit">Sacar</button>
+    </form>
+    <form id="deposit-form" onsubmit="event.preventDefault(); deposit()">
+        <input type="number" id="depositar" placeholder="Valor do depósito" step="0.01">
+        <button type="submit">Depositar</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
